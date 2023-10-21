@@ -30,3 +30,6 @@ Na PONTE H L298 é possivel controlar a rotação do motor colando as seguintes 
 | SENTIDO REVERSO | LOW | HIGH |
 | FREIO | LOW | LOW |
 | FREIO | HIGH | HIGH |
+
+# Links Uteis
+Utilização da PONTE H L298N: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/
