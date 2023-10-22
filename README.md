@@ -14,6 +14,7 @@ Projeto usado para a disciplina de eletrônica digital avançada da PUC MINAS
 ├── database
 │   ├── 
 │     
+```
 
 # Componentes Utilizados
 Os componentes usados para a construção do carrinho foram:
