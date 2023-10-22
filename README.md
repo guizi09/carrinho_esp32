@@ -1,5 +1,19 @@
 # carrinho_esp32
-remote control car using ESP32
+Projeto usado para a disciplina de eletrônica digital avançada da PUC MINAS
+
+
+# Mapa do Diretório
+```
+├── CMakeLists.txt
+├── main
+│   ├── CMakeLists.txt
+│   └── main.c
+└── README.md                  This is the file you are currently reading
+├── image
+│   ├── esp32.png
+├── database
+│   ├── 
+│     
 
 # Componentes Utilizados
 Os componentes usados para a construção do carrinho foram:
