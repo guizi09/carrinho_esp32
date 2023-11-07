@@ -41,6 +41,12 @@ ps3Init();
 
 #define LEDC_SPEED_MODE LEDC_HIGH_SPEED_MODE  // 
 
+// Definição das caracteristicaas do PWM
+#define LEDC_TIMER_BIT_NUM 10
+#define LEDC_TIMER_FREQ_HZ 1000
+#define LEDC_CHANNEL 0
+#define LEDC_DUTY 512
+
 // Função para inicializar o esp
 void initialize();
 
@@ -103,6 +109,7 @@ void initialize()
 
     //Configuração das portas de PWM
     
+<<<<<<< HEAD
     // ************     Configuração do LEDC CANAL 0
     ledc_timer_config_t ledc_timer = 
     {
@@ -145,6 +152,25 @@ void initialize()
         .channel = LEDC_CHANNEL_1,
         .timer_sel = 0,
         .duty = 0,
+=======
+    // Configuração do LEDC
+    ledc_timer_config_t ledc_timer = 
+    {
+        .speed_mode = LEDC_HIGH_SPEED_MODE,
+        .bit_num = LEDC_TIMER_BIT_NUM,
+        .timer_num = LEDC_TIMER_0,
+        .freq_hz = LEDC_TIMER_FREQ_HZ
+    };
+    ESP_ERROR_CHECK(ledc_timer_config(&ledc_timer));
+
+    ledc_channel_config_t ledc_channel = 
+    {
+        .channel = LEDC_CHANNEL,
+        .duty = 0,
+        .gpio_num = gpioPWM_l298, // Número do pino GPIO do motor 
+        .speed_mode = LEDC_HIGH_SPEED_MODE,
+        .timer_sel = LEDC_TIMER_0
+>>>>>>> 33e8ae8cccee997459f3677de43dbb9a61b605a0
     };
     ESP_ERROR_CHECK(ledc_channel_config(&ledc_channel));
 

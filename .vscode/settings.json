@@ -17,6 +17,7 @@
     "idf.flashType": "UART",
     "files.associations": {
         "ps3controller.h": "c",
-        "sfr_defs.h": "c"
+        "sfr_defs.h": "c",
+        "task.h": "c"
     }
 }
